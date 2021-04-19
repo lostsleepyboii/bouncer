@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Bouncer</title>
+  <meta name="description" content="Проект 'Bouncer' для портфолио lostsleepyboii.">
+  <meta name="keywords" content="Bouncer, lostsleepyboii">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#ff4a4a">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="theme-color" content="#ff4a4a">
+</head>
+<body>
+  <header class="header">
+    <div class="header__mobile">
+      <div class="container">
+        <div class="header__mobile__inner">
+          <div class="burger">
+            <span></span>
+          </div>
+          <a class="logo logo--sm" href="index.html">
+            <img src="images/logo.svg" alt="Bouncer" width="152" height="20">
+          </a>
+          <div class="header__mobile__btns">
+            <a class="nav__link nav__link--header" href="#" aria-label="My Account">
+              <svg class="nav__icon">
+                <use href="images/icons/sprite.svg#user"/>
+              </svg>
+              <span>My profile</span>
+            </a>
+    
+            <a class="nav__link nav__link--header" href="cart.html" aria-label="Cart">
+              <svg class="nav__icon">
+                <use href="images/icons/sprite.svg#cart"/>
+              </svg>
+            </a>
+    
+            <button class="nav__link nav__link--header" aria-label="Search">
+              <svg class="nav__icon">
+                <use href="images/icons/sprite.svg#search"/>
+              </svg>
+            </button>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">HOME</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">STORE</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">IPAD</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">MACBOOK</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">ACCESORIES</a>
+              </li>
+            </ul>
+            <ul class="nav__list nav__list--select">
+    
+              <li class="nav__item">
+                <div class="nav__select">
+                  <select aria-label="language">
+                    <option value="">EN</option>
+                    <option value="">RU</option>
+                  </select>
+                </div>
+              </li>
+    
+              <li class="nav__item">
+                <div class="nav__select">
+                  <select aria-label="currency">
+                    <option value="">USD</option>
+                    <option value="">RUB</option>
+                  </select>
+                </div>
+              </li>
+    
+            </ul>
+            <ul class="nav__list nav__list--useful">
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  My profile
+                  <svg class="nav__icon">
+                    <use href="images/icons/sprite.svg#user"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top__inner">
+          <div class="header__top__left">
+            <div class="nav__select">
+              <select aria-label="language">
+                <option value="">EN</option>
+                <option value="">RU</option>
+              </select>
+            </div>
+  
+            <div class="nav__select">
+              <select aria-label="currency">
+                <option value="">USD</option>
+                <option value="">RUB</option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="header__top__right">
+            <a class="nav__link nav__link--header" href="#" aria-label="My Account">
+              <svg class="nav__icon">
+                <use href="images/icons/sprite.svg#user"/>
+              </svg>
+              <span>My profile</span>
+            </a>
+  
+            <a class="nav__link nav__link--header" href="cart.html" aria-label="Cart">
+              <svg class="nav__icon">
+                <use href="images/icons/sprite.svg#cart"/>
+              </svg>
+              <span class="nav__itemsqty">0 Items</span>
+              <div class="nav__cost">$0.00</div>
+            </a>
+  
+            <button class="nav__link nav__link--header" aria-label="Search">
+              <svg class="nav__icon">
+                <use href="images/icons/sprite.svg#search"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom__inner">
+          <a class="logo" href="index.html"><img src="images/logo.svg" alt="Bouncer" width="191" height="25"></a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">HOME</a>
+  
+                <div class="subnav">
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">AirPort & Wireless</a>
+                        <a class="subnav__link" href="#">AppleCare</a>
+                        <a class="subnav__link" href="#">Bags, Shells & Sleeves</a>
+                        <a class="subnav__link" href="#">Business & Security</a>
+                        <a class="subnav__link" href="#">Cables & Docks</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Cameras & Video</a>
+                        <a class="subnav__link" href="#">Car & Travel</a>
+                        <a class="subnav__link" href="#">Cases & Films</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Charging Devices</a>
+                        <a class="subnav__link" href="#">Connected Home</a>
+                        <a class="subnav__link" href="#">Device Care</a>
+                        <a class="subnav__link" href="#">Display & Graphic</a>
+                        <a class="subnav__link" href="#">Fitness & Sport</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Headphones</a>
+                        <a class="subnav__link" href="#">HealhKit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Mice & Keyboards</a>
+                        <a class="subnav__link" href="#">Music Creation</a>
+                        <a class="subnav__link" href="#">Networking & Server</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">STORE</a>
+  
+                <div class="subnav">
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">AirPort & Wireless</a>
+                        <a class="subnav__link" href="#">AppleCare</a>
+                        <a class="subnav__link" href="#">Bags, Shells & Sleeves</a>
+                        <a class="subnav__link" href="#">Business & Security</a>
+                        <a class="subnav__link" href="#">Cables & Docks</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Cameras & Video</a>
+                        <a class="subnav__link" href="#">Car & Travel</a>
+                        <a class="subnav__link" href="#">Cases & Films</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Charging Devices</a>
+                        <a class="subnav__link" href="#">Connected Home</a>
+                        <a class="subnav__link" href="#">Device Care</a>
+                        <a class="subnav__link" href="#">Display & Graphic</a>
+                        <a class="subnav__link" href="#">Fitness & Sport</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Headphones</a>
+                        <a class="subnav__link" href="#">HealhKit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Mice & Keyboards</a>
+                        <a class="subnav__link" href="#">Music Creation</a>
+                        <a class="subnav__link" href="#">Networking & Server</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">IPHONE</a>
+  
+                <div class="subnav">
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">AirPort & Wireless</a>
+                        <a class="subnav__link" href="#">AppleCare</a>
+                        <a class="subnav__link" href="#">Bags, Shells & Sleeves</a>
+                        <a class="subnav__link" href="#">Business & Security</a>
+                        <a class="subnav__link" href="#">Cables & Docks</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Cameras & Video</a>
+                        <a class="subnav__link" href="#">Car & Travel</a>
+                        <a class="subnav__link" href="#">Cases & Films</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Charging Devices</a>
+                        <a class="subnav__link" href="#">Connected Home</a>
+                        <a class="subnav__link" href="#">Device Care</a>
+                        <a class="subnav__link" href="#">Display & Graphic</a>
+                        <a class="subnav__link" href="#">Fitness & Sport</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Headphones</a>
+                        <a class="subnav__link" href="#">HealhKit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Mice & Keyboards</a>
+                        <a class="subnav__link" href="#">Music Creation</a>
+                        <a class="subnav__link" href="#">Networking & Server</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">IPAD</a>
+  
+                <div class="subnav">
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">AirPort & Wireless</a>
+                        <a class="subnav__link" href="#">AppleCare</a>
+                        <a class="subnav__link" href="#">Bags, Shells & Sleeves</a>
+                        <a class="subnav__link" href="#">Business & Security</a>
+                        <a class="subnav__link" href="#">Cables & Docks</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Cameras & Video</a>
+                        <a class="subnav__link" href="#">Car & Travel</a>
+                        <a class="subnav__link" href="#">Cases & Films</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Charging Devices</a>
+                        <a class="subnav__link" href="#">Connected Home</a>
+                        <a class="subnav__link" href="#">Device Care</a>
+                        <a class="subnav__link" href="#">Display & Graphic</a>
+                        <a class="subnav__link" href="#">Fitness & Sport</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Headphones</a>
+                        <a class="subnav__link" href="#">HealhKit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Mice & Keyboards</a>
+                        <a class="subnav__link" href="#">Music Creation</a>
+                        <a class="subnav__link" href="#">Networking & Server</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">MACBOOK</a>
+  
+                <div class="subnav">
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">AirPort & Wireless</a>
+                        <a class="subnav__link" href="#">AppleCare</a>
+                        <a class="subnav__link" href="#">Bags, Shells & Sleeves</a>
+                        <a class="subnav__link" href="#">Business & Security</a>
+                        <a class="subnav__link" href="#">Cables & Docks</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Cameras & Video</a>
+                        <a class="subnav__link" href="#">Car & Travel</a>
+                        <a class="subnav__link" href="#">Cases & Films</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Charging Devices</a>
+                        <a class="subnav__link" href="#">Connected Home</a>
+                        <a class="subnav__link" href="#">Device Care</a>
+                        <a class="subnav__link" href="#">Display & Graphic</a>
+                        <a class="subnav__link" href="#">Fitness & Sport</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Headphones</a>
+                        <a class="subnav__link" href="#">HealhKit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Mice & Keyboards</a>
+                        <a class="subnav__link" href="#">Music Creation</a>
+                        <a class="subnav__link" href="#">Networking & Server</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="products.html">ACCESORIES</a>
+  
+                <div class="subnav">
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">AirPort & Wireless</a>
+                        <a class="subnav__link" href="#">AppleCare</a>
+                        <a class="subnav__link" href="#">Bags, Shells & Sleeves</a>
+                        <a class="subnav__link" href="#">Business & Security</a>
+                        <a class="subnav__link" href="#">Cables & Docks</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Cameras & Video</a>
+                        <a class="subnav__link" href="#">Car & Travel</a>
+                        <a class="subnav__link" href="#">Cases & Films</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Charging Devices</a>
+                        <a class="subnav__link" href="#">Connected Home</a>
+                        <a class="subnav__link" href="#">Device Care</a>
+                        <a class="subnav__link" href="#">Display & Graphic</a>
+                        <a class="subnav__link" href="#">Fitness & Sport</a>
+                      </li>
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Headphones</a>
+                        <a class="subnav__link" href="#">HealhKit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subnav__column">
+                    <h6 class="subnav__title">Category</h6>
+                    <ul class="subnav__list">
+                      <li class="subnav__item">
+                        <a class="subnav__link" href="#">Mice & Keyboards</a>
+                        <a class="subnav__link" href="#">Music Creation</a>
+                        <a class="subnav__link" href="#">Networking & Server</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>  <div class="overlay"></div>
+  <div class="wrapper">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Home</a></li>
+      <li class="breadcrumbs__item"><a href="products.html" class="breadcrumbs__link">Accessories</a></li>
+      <li class="breadcrumbs__item"><a href="card.html" class="breadcrumbs__link active">Beat Solo2 on Ear Headphones - Black</a>
+      </li>
+    </ul>  <div class="container">
+      <h1 class="visually-hidden">Bouncer - Techshop</h1>
+      <div class="wrapper wrapper--cart">
+        <main class="main">
+          <section class="cart">
+            <h2 class="visually-hidden">Bouncer - Cart</h2>
+            <div class="cartTop">
+              <table class="cartTop__orderTable orderTable" id="cart">
+                <thead class="orderTable__header">
+                  <tr class="orderTable__row">
+                    <th class="orderTable__title orderTable__title--product">Product</th>
+                    <th class="orderTable__title orderTable__title--price">Price</th>
+                    <th class="orderTable__title orderTable__title--qty">Qty</th>
+                    <th class="orderTable__title orderTable__title--unitprice">Unit Price</th>
+                  </tr>
+                </thead>
+                <tbody class="orderTable__body">
+                  <tr class="orderTable__row cartProduct">
+                    <td class="cartProduct__item">
+                      <button class="cartProduct__clear" aria-label="Clear Product"></button>
+                      <a class="cartProduct__link" href="card.html">
+                        <picture>
+                          <source srcset="images/products/cart/beatssolo2.webp" type="image/webp">
+                          <img class="lazy" src="images/products/cart/beatssolo2.png" alt="Beats Solo 2" width="130" height="130">
+                        </picture>
+                        <span class="cartProduct__name">Beat Solo2 on Ear Headphones - Black</span>
+                      </a>
+                    </td>
+                    <td class="cartProduct__price">$499</td>
+                    <td class="cartProduct__qty">
+                      <div class="cartProduct__stepper stepper">
+                        <button class="stepper__btn stepper__btn--minus" aria-label="Minus">
+                          <svg class="minus">
+                            <use href="images/icons/sprite.svg#minus"/>
+                          </svg>
+                        </button>
+                        <input type="text" class="stepper__input" value="1" data-price="499" maxlength="5" aria-label="Stepper" readonly="readonly">
+                        <button class="stepper__btn stepper__btn--plus" aria-label="Plus">
+                          <svg class="plus">
+                            <use href="images/icons/sprite.svg#plus"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="cartProduct__unitprice">$499</td>
+                  </tr>
+  
+                  <tr class="orderTable__row cartProduct">
+                    <td class="cartProduct__item">
+                      <button class="cartProduct__clear" aria-label="Clear Product"></button>
+                      <a class="cartProduct__link" href="card.html">
+                        <picture>
+                          <source srcset="images/products/cart/applemacbookpro.webp" type="image/webp">
+                          <img class="lazy" src="images/products/cart/applemacbookpro.png" alt="Apple Macbook Pro" width="130" height="130">
+                        </picture>
+                        <span class="cartProduct__name">Apple Macbook Pro</span>
+                      </a>
+                    </td>
+                    <td class="cartProduct__price">$899</td>
+                    <td class="cartProduct__qty">
+                      <div class="cartProduct__stepper stepper">
+                        <button class="stepper__btn stepper__btn--minus" aria-label="Minus">
+                          <svg class="minus">
+                            <use href="images/icons/sprite.svg#minus"/>
+                          </svg>
+                        </button>
+                        <input type="text" class="stepper__input" value="1" data-price="899" maxlength="5" aria-label="Stepper" readonly="readonly">
+                        <button class="stepper__btn stepper__btn--plus" aria-label="Plus">
+                          <svg class="plus">
+                            <use href="images/icons/sprite.svg#plus"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="cartProduct__unitprice">$899</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="cartBottom">
+              <div class="cartBottom__couponCode couponCode">
+                <form id="couponForm">
+                  <div class="couponCode__inner">
+                    <input type="text" class="couponCode__input" placeholder="Voucher code" aria-label="Voucher code">
+                    <button type="button" class="btn btn--input">Redeem</button>
+                  </div>
+                </form>
+              </div>
+              <div class="cartBottom__orderInfo orderInfo">
+                <ul class="orderInfo__list">
+                  <li class="orderInfo__item">
+                    <label class="orderInfo__label">Subtotal</label>
+                    <span class="orderInfo__text" id="subtotalPrice"></span>
+                  </li>
+                  <li class="orderInfo__item">
+                    <label class="orderInfo__label">Shipping fee</label>
+                    <span class="orderInfo__text">$20</span>
+                  </li>
+                  <li class="orderInfo__item">
+                    <label class="orderInfo__label">Coupon</label>
+                    <span class="orderInfo__text">No</span>
+                  </li>
+                </ul>
+                <div class="orderInfo__totalPrice totalPrice">
+                  <label class="totalPrice__label">Total</label>
+                  <span class="totalPrice__price" id="totalPrice"></span>
+                </div>
+                <button class="btn btn--checkout">Check out</button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+    
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+  
+        <div class="footer__contacts">
+  
+          <div class="footer__block">
+            <img class="footer__logo lazy" data-src="images/logo-footer.svg" alt="Bouncer" width="191" height="25">
+            <p class="footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+          </div>
+  
+          <div class="footer__block">
+            <h3 class="footer__title">Follow Us</h3>
+            <p class="footer__text footer__text--follow">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+            <div class="footer__socials social">
+              <a href="#" class="social__link" aria-label="facebook" target="_blank" rel="noopener">
+                <svg class="social__icon">
+                  <use href="images/icons/sprite.svg#facebook"/>
+                </svg>
+              </a>
+              <a href="#" class="social__link" aria-label="twitter" target="_blank" rel="noopener">
+                <svg class="social__icon social__icon--twitter">
+                  <use href="images/icons/sprite.svg#twitter"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+  
+          <div class="footer__block">
+            <h3 class="footer__title">Contact Us</h3>
+            <div class="footer__text">My Company , 4578 Marmora Road, Glasgow D04 89GR</div>
+            <div class="footer__text">
+              Call us now: 
+              <a class="footer__link footer__link--contact" href="tel:0123-456-789">0123-456-789</a>
+            </div>
+            <div class="footer__text">
+              Email:
+              <a class="footer__link footer__link--contact" href="mailto:support@whatever.com">support@whatever.com</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="footer__links">
+          <div class="footer__block">
+            <h3 class="footer__title">Infomation</h3>
+            <ul class="footer__block__links">
+              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Infomation</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy
+              </a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Service</h3>
+            <ul class="footer__block__links">
+              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Infomation</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy
+              </a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Extras</h3>
+            <ul class="footer__block__links">
+              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Infomation</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy
+              </a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">My Account</h3>
+            <ul class="footer__block__links">
+              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Infomation</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy
+              </a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Userful Links</h3>
+            <ul class="footer__block__links">
+              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Infomation</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy
+              </a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Our Offers</h3>
+            <ul class="footer__block__links">
+              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Infomation</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy
+              </a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer__copyright">
+          <div class="footer__copyright__content">
+            <p class="footer__text footer__text--copyright">
+              © 2021 Project made by <a class="footer__link footer__link--copyright" href="https://github.com/lostsleepyboii" target="_blank" rel="noopener">lostsleepyboii.</a><br>
+              © 2018 Ecommerce theme by <a class="footer__link footer__link--copyright" href="https://www.bisenbaev.com" target="_blank" rel="noopener">www.bisenbaev.com</a>
+            </p>
+          </div>
+          <div class="footer__payments">
+            <img class="footer__payment lazy" data-src="images/icons/payments/western-union.svg" alt="Western Union" width="38" height="25">
+            <img class="footer__payment lazy" data-src="images/icons/payments/mastercard.svg" alt="MasterCard" width="38" height="25">
+            <img class="footer__payment lazy" data-src="images/icons/payments/paypal.svg" alt="PayPal" width="38" height="25">
+            <img class="footer__payment lazy" data-src="images/icons/payments/visa.svg" alt="Visa" width="38" height="25">
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </footer>  
+  <script src="js/app.min.js"></script>
+</body>
+</html>
