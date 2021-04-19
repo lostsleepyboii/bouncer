@@ -2486,15 +2486,12 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 2rem;
 }
 
 .footer__block {
@@ -5216,6 +5213,10 @@ body.lock {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+  }
+
+  .footer__payments {
+    margin-top: 2rem;
   }
 
   .footer__text {
