@@ -1,0 +1,51 @@
+.features {
+  padding-top: 6rem;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4.66rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-bottom: 2.33rem;
+  }
+
+  &__name {
+    margin-bottom: 2.33rem;
+
+    color: $black;
+    font-size: $font-l;
+    font-weight: 600;
+
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    color: $black;
+    font-size: $font-s;
+    font-weight: 400;
+
+    text-align: center;
+  }
+}
+
+// Media
+@include l-tablet {
+  .features {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__desc {
+      font-size: $font-m;
+    }
+  }
+}

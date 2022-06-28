@@ -1,0 +1,61 @@
+.post {
+  &__header {
+    margin-bottom: 0.66rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    margin-bottom: 1.66rem;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px;
+  }
+
+  &__title {
+    color: $lighter-blue;
+    font-size: $font-xl;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: darken($lighter-blue, 15);
+    }
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__desc {
+    width: 85%;
+    color: $black;
+    font-size: $font-s;
+    font-weight: 400;
+  }
+}
+
+// Media
+@include l-tablet {
+  .post {
+    &__title {
+      font-size: $font-l;
+    }
+  }
+}
+
+@include mobile {
+  .post {
+    &__title {
+      font-size: $font-xm;
+    }
+
+    &__desc {
+      width: 100%;
+      font-size: $font-m;
+    }
+  }
+}

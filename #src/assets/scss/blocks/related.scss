@@ -1,0 +1,22 @@
+.related {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__title {
+    margin-bottom: 4rem;
+    color: $black;
+    font-size: $font-xl;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .related {
+    &__title {
+      font-size: $font-l;
+    }
+  }
+}

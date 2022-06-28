@@ -1,0 +1,150 @@
+.cartProduct {
+  padding: 2.66rem 0;
+  border-bottom: 2px solid $lighter-gray;
+  
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__clear {
+    margin-right: 1.66rem;
+    position: relative;
+    padding: 7px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($light-red, 0.05);
+    border-radius: 100%;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $light-red;
+
+      &::after,
+      &::before {
+        background-color: $white;
+      }
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 1px;
+      background-color: $dark-red;
+
+      transition: all 0.2s ease;
+    }
+
+    &::after {
+      transform: rotate(135deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    margin-left: 3.33rem;
+    color: $black;
+    font-size: $font-xm;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__price,
+  &__unitprice {
+    display: flex;
+    align-items: center;
+    color: $black;
+    font-size: $font-xm;
+    font-weight: 400;
+  }
+
+  &__qty {
+    display: flex;
+    align-items: center;
+  }
+
+  &__stepper {
+    display: flex;
+    align-items: center;
+    height: 47px;
+    border-radius: 4px;
+    background-color: $lighter-gray;
+  }
+}
+
+// Media
+@include l-tablet {
+  .cartProduct {
+    &__unitprice {
+      display: none;
+    }
+
+    &__stepper {
+      width: 100%;
+    }
+
+    &__name {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@include sm-tablet {
+  .cartProduct {
+    &__price {
+      justify-content: center;
+      font-size: $font-l;
+    }
+  }
+}
+
+@include mobile {
+  .cartProduct {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__clear {
+      margin-right: 0;
+      margin-bottom: 2rem;
+      width: 35px;
+      height: 35px;
+
+      &::after,
+      &::before {
+        width: 15px;
+      }
+    }
+
+    &__link {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__name {
+      margin-top: 1rem;
+      margin-left: 0;
+      font-size: $font-m;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.breadcrumbs {
+  padding: 1.13rem;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: $lighter-gray;
+
+  &__item {
+    display: inline;
+
+    &:last-child {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &:not(:last-of-type)::after {
+      content: '/';
+      margin: 0 0.66rem;
+      color: $dark-gray;
+    }
+  }
+
+  &__link {
+    color: $lighter-blue;
+    font-size: $font-s;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &.active {
+      color: $black;
+      pointer-events: none;
+    }
+  }
+}
+
+// Media
+@include mobile {
+  .breadcrumbs {
+    display: none;
+  }
+}

@@ -1,0 +1,160 @@
+.banners {
+  position: relative;
+  bottom: 55px;
+  z-index: 1;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  &__item {
+    display: flex;
+    padding: 2rem;
+    height: 280px;
+    
+    background-repeat: no-repeat;
+
+    &--iphone6 {
+      flex-direction: column;
+
+      background-color: $light-red;
+      background-position: bottom right;
+    }
+    
+    &--oculusrift {
+      align-items: flex-end;
+      justify-content: space-between;
+
+      background-color: $lighter-gray;
+      background-position: center;
+    }
+
+    &--goprohero6 {
+      flex-direction: column;
+
+      background-color: $dark-gray;
+      background-position: right bottom;
+    }
+
+    &--side {
+      height: 400px;
+      background-position: bottom;
+    }
+  }
+
+  &__title {
+    color: $black;
+    font-size: $font-l;
+    font-weight: 700;
+
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: lighten($black, 15);
+    }
+
+    &--iphone6 {
+      color: $white;
+
+      &:hover {
+        color: darken($white, 15);
+      }
+    }
+  }
+
+  &__desc {
+    margin: 1.33rem 0;
+
+    color: $black;
+    font-size: $font-xs;
+    font-weight: 400;
+
+    &--iphone6 {
+      color: $white;
+    }
+  }
+
+  &__cost {
+    color: $black;
+    font-size: $font-l;
+    font-weight: 400;
+
+    &--iphone6 {
+      color: $white;
+    }
+  }
+}
+
+// LAZY LOAD BANNERS
+.no-webp .banners__item {
+  &--iphone6.lazy-bg-loaded {
+    background-image: url("../images/banners/iphone6.png");
+  }
+  
+  &--oculusrift.lazy-bg-loaded  {
+    background-image: url("../images/banners/oculusrift.png");
+  }
+
+  &--goprohero6.lazy-bg-loaded  {
+    background-image: url("../images/banners/goprohero6.png");
+  }
+
+  &--side.lazy-bg-loaded {
+    background-image: url("../images/sidebanners/goprohero6.png");
+  }
+}
+
+.webp .banners__item {
+  &--iphone6.lazy-bg-loaded  {
+    background-image: url("../images/banners/iphone6.webp");
+  }
+  
+  &--oculusrift.lazy-bg-loaded  {
+    background-image: url("../images/banners/oculusrift.webp");
+  }
+
+  &--goprohero6.lazy-bg-loaded  {
+    background-image: url("../images/banners/goprohero6.webp");
+  }
+
+  &--side.lazy-bg-loaded {
+    background-image: url("../images/sidebanners/goprohero6.webp");
+  }
+}
+
+
+// Media
+@include laptop {
+  .banners {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+    
+    &__item {
+      &--iphone6,
+      &--oculusrift {
+        display: none;
+      }
+    }
+  }
+}
+
+@include l-tablet {
+  .banners {
+    &__desc {
+      font-size: $font-m;
+    }
+  }
+}
+
+@include mobile {
+  .banners {
+    &__item {
+      &--iphone6,
+      &--goprohero6 {
+        background-blend-mode: soft-light;
+      }
+    }
+  }
+}

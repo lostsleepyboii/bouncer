@@ -1,0 +1,121 @@
+---
+layout: default
+title: Cart
+---
+<div class="wrapper">
+  {{> breadcrumbs}}
+  <div class="container">
+    <h1 class="visually-hidden">Bouncer - Techshop</h1>
+    <div class="wrapper wrapper--cart">
+      <main class="main">
+        <section class="cart">
+          <h2 class="visually-hidden">Bouncer - Cart</h2>
+          <div class="cartTop">
+            <table class="cartTop__orderTable orderTable" id="cart">
+              <thead class="orderTable__header">
+                <tr class="orderTable__row">
+                  <th class="orderTable__title orderTable__title--product">Product</th>
+                  <th class="orderTable__title orderTable__title--price">Price</th>
+                  <th class="orderTable__title orderTable__title--qty">Qty</th>
+                  <th class="orderTable__title orderTable__title--unitprice">Unit Price</th>
+                </tr>
+              </thead>
+              <tbody class="orderTable__body">
+                <tr class="orderTable__row cartProduct">
+                  <td class="cartProduct__item">
+                    <button class="cartProduct__clear" aria-label="Clear Product"></button>
+                    <a class="cartProduct__link" href="card.html">
+                      <picture>
+                        <source srcset="/" data-srcset="images/products/cart/beatssolo2.webp" type="image/webp">
+                        <img class="lazy" src="/" data-src="images/products/cart/beatssolo2.png" alt="Beats Solo 2" width="130" height="130">
+                      </picture>
+                      <span class="cartProduct__name">Beat Solo2 on Ear Headphones - Black</span>
+                    </a>
+                  </td>
+                  <td class="cartProduct__price">$499</td>
+                  <td class="cartProduct__qty">
+                    <div class="cartProduct__stepper stepper">
+                      <button class="stepper__btn stepper__btn--minus" aria-label="Minus">
+                        <svg class="minus">
+                          <use href="images/icons/sprite.svg#minus"/>
+                        </svg>
+                      </button>
+                      <input type="text" class="stepper__input" value="1" data-price="499" maxlength="5" aria-label="Stepper" readonly>
+                      <button class="stepper__btn stepper__btn--plus" aria-label="Plus">
+                        <svg class="plus">
+                          <use href="images/icons/sprite.svg#plus"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="cartProduct__unitprice">$499</td>
+                </tr>
+
+                <tr class="orderTable__row cartProduct" >
+                  <td class="cartProduct__item">
+                    <button class="cartProduct__clear" aria-label="Clear Product"></button>
+                    <a class="cartProduct__link" href="card.html">
+                      <picture>
+                        <source srcset="/" data-srcset="images/products/cart/applemacbookpro.webp" type="image/webp">
+                        <img class="lazy" src="/" data-src="images/products/cart/applemacbookpro.png" alt="Apple Macbook Pro" width="130" height="130">
+                      </picture>
+                      <span class="cartProduct__name">Apple Macbook Pro</span>
+                    </a>
+                  </td>
+                  <td class="cartProduct__price">$899</td>
+                  <td class="cartProduct__qty">
+                    <div class="cartProduct__stepper stepper">
+                      <button class="stepper__btn stepper__btn--minus" aria-label="Minus">
+                        <svg class="minus">
+                          <use href="images/icons/sprite.svg#minus"/>
+                        </svg>
+                      </button>
+                      <input type="text" class="stepper__input" value="1" data-price="899" maxlength="5" aria-label="Stepper" readonly>
+                      <button class="stepper__btn stepper__btn--plus" aria-label="Plus">
+                        <svg class="plus">
+                          <use href="images/icons/sprite.svg#plus"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="cartProduct__unitprice">$899</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cartBottom">
+            <div class="cartBottom__couponCode couponCode">
+              <form id="couponForm">
+                <div class="couponCode__inner">
+                  <input type="text" class="couponCode__input" placeholder="Voucher code" aria-label="Voucher code">
+                  <button type="button" class="btn btn--input">Redeem</button>
+                </div>
+              </form>
+            </div>
+            <div class="cartBottom__orderInfo orderInfo">
+              <ul class="orderInfo__list">
+                <li class="orderInfo__item">
+                  <label class="orderInfo__label">Subtotal</label>
+                  <span class="orderInfo__text" id="subtotalPrice"></span>
+                </li>
+                <li class="orderInfo__item">
+                  <label class="orderInfo__label">Shipping fee</label>
+                  <span class="orderInfo__text">$20</span>
+                </li>
+                <li class="orderInfo__item">
+                  <label class="orderInfo__label">Coupon</label>
+                  <span class="orderInfo__text">No</span>
+                </li>
+              </ul>
+              <div class="orderInfo__totalPrice totalPrice">
+                <label class="totalPrice__label">Total</label>
+                <span class="totalPrice__price" id="totalPrice"></span>
+              </div>
+              <button class="btn btn--checkout">Check out</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</div>

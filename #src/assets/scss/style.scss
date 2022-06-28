@@ -1,0 +1,79 @@
+/*	Reset	*/
+@import "vendor/reset";
+
+/*	Imports	*/
+@import "_vars";
+@import "_mixins";
+@import "_fonts";
+
+html {
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	font-family: 'ProximaNova', sans-serif;
+	font-size: $font-s;
+	line-height: 1.5;
+	background-color: $white;
+	color: $black;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+/* Vendors */
+@import "vendor/swiper";
+@import "vendor/nouislider";
+
+/*	Common	*/
+@import "common/sprite";
+@import "common/container";
+@import "common/wrapper";
+@import "common/overlay";
+
+/*	Blocks	*/
+@import "blocks/main";
+@import "blocks/header";
+@import "blocks/breadcrumbs.scss";
+@import "blocks/nav";
+@import "blocks/subnav";
+@import "blocks/intro";
+@import "blocks/banners";
+@import "blocks/products";
+@import "blocks/banner";
+@import "blocks/banner-2";
+@import "blocks/features";
+@import "blocks/news";
+@import "blocks/featured";
+@import "blocks/search";
+@import "blocks/footer";
+@import "blocks/sidebar";
+@import "blocks/productsProps";
+@import "blocks/pagination";
+@import "blocks/card";
+@import "blocks/cardTop";
+@import "blocks/cardBottom";
+@import "blocks/related";
+@import "blocks/sidebanners";
+@import "blocks/cart";
+@import "blocks/cartTop";
+@import "blocks/cartBottom";
+@import "blocks/cartProduct";
+@import "blocks/blog";
+@import "blocks/post";
+@import "blocks/btn";
+@import "blocks/rangeSlider";
+@import "blocks/rating";
+@import "blocks/check";
+@import "blocks/stepper";
+@import "blocks/postThumb";
+@import "blocks/tags";
+@import "blocks/singlePost";
+@import "blocks/postInfo";
+@import "blocks/singlePost";
+@import "blocks/entryPost";
+@import "blocks/comments";
+@import "blocks/rater";
+@import "blocks/popup";

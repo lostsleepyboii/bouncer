@@ -1,0 +1,1091 @@
+---
+layout: default
+title: Products
+---
+<div class="wrapper">
+  {{> breadcrumbs}}
+
+  <div class="container">
+    <h1 class="visually-hidden">Bouncer - Techshop</h1>
+    <div class="wrapper wrapper--products">
+      <aside class="sidebar">
+        <h2 class="visually-hidden">Side Filters</h2>
+        <button class="sidebar__close" aria-label="Close Filters"></button>
+        <div class="sidebar__list">
+          <div class="sidebar__block">
+            <h3 class="sidebar__block__title">ACCESORIES</h3>
+            <div class="sidebar__block__list">
+              <button class="sidebar__block__item">
+                <span>Apple Car</span>
+                <span>2</span>
+              </button>
+              <button class="sidebar__block__item active">
+                <span>Air port & wireless</span>
+                <span>48</span>
+              </button>
+              <button class="sidebar__block__item">
+                <span>Cables & Docks</span>
+                <span>14</span>
+              </button>
+              <button class="sidebar__block__item">
+                <span>Cases & Films</span>
+                <span>15</span>
+              </button>
+              <button class="sidebar__block__item">
+                <span>Charging Devices</span>
+                <span>23</span>
+              </button>
+              <button class="sidebar__block__item">
+                <span>Connected home</span>
+                <span>1</span>
+              </button>
+              <button class="sidebar__block__item">
+                <span>Headphones</span>
+                <span>95</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="sidebar__block">
+            <h3 class="sidebar__block__title">Prices</h3>
+            <div class="sidebar__filters filters-price">
+              <div class="filters-price__inputs">
+                <span class="filters-price__name">Ranger:</span>
+                <div class="filters-price__labels">
+
+                  <label class="filters-price__label">
+                    <span class="filters-price__text">$</span>
+                    <input class="filters-price__input" id="input0" type="number" min="13" max="9999" placeholder="13.99">
+                  </label>
+
+                  <label class="filters-price__label">
+                    <span class="filters-price__text">$</span>
+                    <input class="filters-price__input" id="input1" type="number" min="13" max="9999" placeholder="25.99">
+                  </label>
+
+                </div>
+              </div>
+              <div class="filters-price__slider" id="rangeSlider"></div>
+            </div>
+          </div>
+
+          <div class="sidebar__block">
+            <h3 class="sidebar__block__title">Color</h3>
+            <div class="sidebar__check check">
+              <label class="check__item" aria-label="Choose blue color">
+                <input class="check__radio" id="blue" type="checkbox" checked>
+                <span class="check__box blue"></span>
+              </label>
+              <label class="check__item" aria-label="Choose red color">
+                <input class="check__radio" id="red" type="checkbox">
+                <span class="check__box red"></span>
+              </label>
+              <label class="check__item" aria-label="Choose black color">
+                <input class="check__radio" id="black" type="checkbox">
+                <span class="check__box black"></span>
+              </label>
+              <label class="check__item" aria-label="Choose yellow color">
+                <input class="check__radio" id="yellow" type="checkbox">
+                <span class="check__box yellow"></span>
+              </label>
+              <label class="check__item" aria-label="Choose rose color">
+                <input class="check__radio" id="rose" type="checkbox">
+                <span class="check__box rose"></span>
+              </label>
+              <label class="check__item" aria-label="Choose beige color">
+                <input class="check__radio" id="beige" type="checkbox">
+                <span class="check__box beige"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="sidebar__block">
+            <h3 class="sidebar__block__title">BRAND</h3>
+            <div class="sidebar__block__list">
+              <button class="sidebar__block__item">
+                <span>Apple</span>
+                <span>99</span>
+              </button>
+              <button class="sidebar__block__item active">
+                <span>LG</span>
+                <span>99</span>
+              </button>
+              <button class="sidebar__block__item">
+                <span>Samsung</span>
+                <span>99</span>
+              </button>
+              <button class="sidebar__block__item">
+                <span>Siemens</span>
+                <span>99</span>
+              </button>
+            </div>
+          </div>
+
+          <button class="btn btn--more">More</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <a href="card.html">
+          <section class="banner-2">
+              <div class="banner-2__inner">
+                <div class="banner-2__content">
+                  <h2 class="banner-2__title">iPhone 8</h2>
+                  <p class="banner-2__desc">Performance and design. Taken right to the edge.</p>
+                  <span class="banner-2__shopnow">Shop Now</span>
+                </div>
+                <picture class="banner-2__img">
+                  <source srcset="/" data-srcset="images/iphone8.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/iphone8.png" alt="iPhone 8" width="366" height="340">
+                </picture>
+              </div>
+          </section>
+        </a>
+        
+        <section class="productsProps">
+          <h2 class="visually-hidden">Filters & Sorting</h2>
+          <div class="productsProps__selects propItem">
+            <span class="propItem__count">13 Items</span>
+            <div class="propItem__select">
+              <label for="sortby" class="propItem__label">Sort By</label>
+              <select id="sortby" aria-label="Sort By">
+                <option value="1">Name</option>
+                <option value="2">Latest Arrivals</option>
+                <option value="3">Highest Price</option>
+                <option value="4">Lowest Price</option>
+              </select>
+            </div>
+            <div class="propItem__select">
+              <label for="amount" class="propItem__label">Show</label>
+              <select id="amount" aria-label="Show">
+                <option value="1">12</option>
+                <option value="2">24</option>
+                <option value="3">36</option>
+                <option value="4">All</option>
+              </select>
+            </div>
+          </div>
+          <div class="productsProps__btns propBtns">
+            <button class="propBtns__btn propBtns__btn--sort" id="sortingBtn">Sorting</button>
+            <button class="propBtns__btn" id="filterBtn">Filters</button>
+            <button class="propBtns__btn propBtns__btn--sortsm" id="sortingBtn" aria-label="Sorting">
+              <svg class="filter-sort">
+                <use href="images/icons/sprite.svg#filter-sort" />
+              </svg>
+            </button>
+          </div>
+          <div class="productsProps__views viewBtns">
+            <button class="viewBtns__btn active" data-view="grid-view" aria-label="Sort by grid">
+              <svg class="filter-grid">
+                <use href="images/icons/sprite.svg#filter-grid" />
+              </svg>
+            </button>
+            <button class="viewBtns__btn" data-view="list-view" aria-label="Sort by line">
+              <svg class="filter-line">
+                <use href="images/icons/sprite.svg#filter-line" />
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <section class="products">
+          <h2 class="visually-hidden">Products</h2>
+          <div class="products__inner">
+            <div class="products__list grid-view">
+              <article class="products__item hot">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="products__item">
+                <div class="products__top">
+                  <div class="products__overlay overlay">
+                    <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                      <svg class="overlay__icon overlay__icon--heart">
+                        <use href="images/icons/sprite.svg#heart" />
+                      </svg>
+                    </button>
+  
+                    <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                      <svg class="overlay__icon">
+                        <use href="images/icons/sprite.svg#cart-2" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <picture class="products__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                      height="153">
+                  </picture>
+                </div>
+  
+                <div class="products__content">
+                  <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                  <div class="products__rate">★ ★ ★ ★ ★</div>
+                  <div class="products__prices">
+                    <span class="products__price">$499</span>
+                    <span class="products__price products__price--old">$599</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="products__list list-view" style="display: none;">
+              <article class="productsHorizontal__item hot">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="productsHorizontal__item">
+                <a href="card.html" class="productsHorizontal__item__link">
+                  <picture class="productsHorizontal__img">
+                    <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                    <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236" height="153">
+                  </picture>  
+                </a>
+                <div class="productsHorizontal__content">
+                  <div class="productsHorizontal__top">
+                    <a href="card.html"><h3 class="productsHorizontal__name">Beats Solo2 On Ear Headphones - Black</h3></a>
+                    <div class="productsHorizontal__rating rating">
+                      <div class="rating__stars">★ ★ ★ ★ ★</div>
+                      <span class="rating__count">0 reviews</span>
+                      <a href="card.html" class="rating__link">Submit a review</a>
+                    </div>
+                  </div>
+
+                  <div class="productsHorizontal__bottom">
+                    <div class="productsHorizontal__prices">
+                      <span class="productsHorizontal__price">$499</span>
+                      <span class="productsHorizontal__price productsHorizontal__price--old">$599</span>
+                    </div>
+                    <p class="productsHorizontal__desc">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+                    </p>
+                    <div class="productsHorizontal__btns">
+                      <button class="btn btn--blue btn--cart" onclick="getItemToCart()">
+                        <svg class="overlay__icon">
+                          <use href="images/icons/sprite.svg#cart-2" />
+                        </svg>
+                        <span>Add To Cart</span>
+                      </button>
+                      <button class="btn btn--blue" aria-label="Add To Wishlist">
+                        <svg class="overlay__icon overlay__icon--heart">
+                          <use href="images/icons/sprite.svg#heart" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {{> pagination}}
+      </main>
+    </div>
+  </div>
+</div>

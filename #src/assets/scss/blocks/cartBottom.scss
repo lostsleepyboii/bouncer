@@ -1,0 +1,122 @@
+.cartBottom {
+  padding-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__couponCode {
+    .couponCode {
+      &__inner {
+        display: flex;
+      }
+
+      &__input {
+        padding: 1.2rem 1.06rem;
+
+        width: 250px;
+
+        resize: none;
+        overflow: auto;
+
+        color: $black;
+        font-family: inherit;
+        font-size: $font-xm;
+        font-weight: 400;
+
+        outline: 0;
+        border-top: 2px solid $light-gray;
+        border-bottom: 2px solid $light-gray;
+        border-left: 2px solid $light-gray;
+        border-radius: 4px 0 0 4px;
+
+        transition: all 0.2s ease;
+
+        &:focus {
+          border-top: 2px solid $lighter-blue;
+          border-bottom: 2px solid $lighter-blue;
+          border-left: 2px solid $lighter-blue;
+        }
+      }
+    }
+  }
+
+  &__orderInfo {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+
+    .orderInfo {
+      &__list {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $lighter-gray;
+      }
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &__label,
+      &__text {
+        color: $black;
+        font-size: $font-xm;
+        font-weight: 400;
+      }
+
+      &__totalPrice {
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        .totalPrice {
+          &__label,
+          &__price {
+            color: $black;
+            font-size: $font-xl;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media 
+@include l-tablet {
+  .cartBottom {
+    flex-direction: column;
+
+    &__couponCode {
+      margin-bottom: 6rem;
+
+      .couponCode {
+        &__inner {
+          flex-direction: column;
+        }
+
+        &__input {
+          margin-bottom: 0.5rem;
+          width: 100%;
+    
+          font-size: $font-m;
+          border: 2px solid $light-gray;
+          border-radius: 4px;
+    
+          &:focus {
+            border: 2px solid $lighter-blue;
+          }
+        }
+      }
+    }
+
+    &__orderInfo {
+      width: 100%;
+    }
+  }
+}

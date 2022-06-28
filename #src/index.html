@@ -1,0 +1,561 @@
+---
+layout: default
+title: Home
+---
+{{> popup}}
+<div class="wrapper">
+  <h1 class="visually-hidden">Bouncer - Techshop</h1>
+  <main class="main">
+    <section class="intro">
+      <div class="container">
+        <div class="swiper-container" id="slider">
+          <div class="intro__list swiper-wrapper">
+            <div class="intro__slide swiper-slide">
+              <div class="intro__content">
+                <h2 class="intro__title">iPhone X</h2>
+                <p class="intro__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy.</p>
+                <a class="intro__more" href="card.html">More</a>
+              </div>
+              <picture class="intro__img">
+                <source srcset="images/iphonex.webp" type="image/webp">
+                <img src="images/iphonex.png" alt="iPhone X" width="465" height="650">
+              </picture>
+            </div>
+            <div class="intro__slide swiper-slide">
+              <div class="intro__content">
+                <h2 class="intro__title">iPhone 6S</h2>
+                <p class="intro__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy.</p>
+                <a class="intro__more" href="card.html">More</a>
+              </div>
+              <picture class="intro__img">
+                <source srcset="images/iphonex.webp" type="image/webp">
+                <img src="images/iphonex.png" alt="iPhone X" width="465" height="650">
+              </picture>
+            </div>
+            <div class="intro__slide swiper-slide">
+              <div class="intro__content">
+                <h2 class="intro__title">iPhone 8</h2>
+                <p class="intro__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy.</p>
+                <a class="intro__more" href="card.html">More</a>
+              </div>
+              <picture class="intro__img">
+                <source srcset="images/iphonex.webp" type="image/webp">
+                <img src="images/iphonex.png" alt="iPhone X" width="465" height="650">
+              </picture>
+            </div>
+          </div>
+
+          <button class="swiper-button-prev" aria-label="Previous">
+            <svg class="arrow-left">
+              <use href="images/icons/sprite.svg#arrow-left" />
+            </svg>
+          </button>
+
+          <button class="swiper-button-next" aria-label="Next">
+            <svg class="arrow-right">
+              <use href="images/icons/sprite.svg#arrow-right" />
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="banners">
+      <h2 class="visually-hidden">Banners</h2>
+      <div class="container">
+        <div class="banners__inner">
+          <a href="card.html">
+            <div class="banners__item banners__item--iphone6 lazy-bg">
+              <h3 class="banners__title banners__title--iphone6">iPhone 6</h3>
+              <p class="banners__desc banners__desc--iphone6">Lorem Ipsum dolor sit amet, consectetur<br> adipiscing elit,
+                labor</p>
+              <span class="banners__cost banners__cost--iphone6">$399</span>
+            </div>
+          </a>
+
+          <a href="card.html">
+            <div class="banners__item banners__item--oculusrift lazy-bg">
+              <h3 class="banners__title">Oculus Rift</h3>
+              <span class="banners__cost">$349</span>
+            </div>
+          </a>
+
+          <a href="card.html">
+            <div class="banners__item banners__item--goprohero6 lazy-bg">
+              <h3 class="banners__title">GoPro Hero 6</h3>
+              <p class="banners__desc">Lorem Ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> labor</p>
+              <span class="banners__cost">$299</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="products__inner">
+          <h2 class="products__title">BEST SELLER</h2>
+          <div class="products__tabs">
+            <button class="products__tab active">All</button>
+            <button class="products__tab">Mac</button>
+            <button class="products__tab">iPhone</button>
+            <button class="products__tab">iPad</button>
+            <button class="products__tab">iPod</button>
+            <button class="products__tab">Accessories</button>
+          </div>
+
+          <div class="products__list grid-view" id="products">
+            <article class="products__item hot">
+              <div class="products__top">
+                <div class="products__overlay overlay">
+                  <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                    <svg class="overlay__icon overlay__icon--heart">
+                      <use href="images/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+
+                  <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                    <svg class="overlay__icon">
+                      <use href="images/icons/sprite.svg#cart-2" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <picture class="products__img">
+                  <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                    height="153">
+                </picture>
+              </div>
+
+              <div class="products__content">
+                <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                <div class="products__rate">★ ★ ★ ★ ★</div>
+                <div class="products__prices">
+                  <span class="products__price">$499</span>
+                  <span class="products__price products__price--old">$599</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="products__item">
+              <div class="products__top">
+                <div class="products__overlay overlay">
+                  <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                    <svg class="overlay__icon overlay__icon--heart">
+                      <use href="images/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+
+                  <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                    <svg class="overlay__icon">
+                      <use href="images/icons/sprite.svg#cart-2" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <picture class="products__img">
+                  <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                    height="153">
+                </picture>
+              </div>
+
+              <div class="products__content">
+                <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                <div class="products__rate">★ ★ ★ ★ ★</div>
+                <div class="products__prices">
+                  <span class="products__price">$499</span>
+                  <span class="products__price products__price--old">$599</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="products__item">
+              <div class="products__top">
+                <div class="products__overlay overlay">
+                  <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                    <svg class="overlay__icon overlay__icon--heart">
+                      <use href="images/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+
+                  <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                    <svg class="overlay__icon">
+                      <use href="images/icons/sprite.svg#cart-2" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <picture class="products__img">
+                  <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                    height="153">
+                </picture>
+              </div>
+
+              <div class="products__content">
+                <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                <div class="products__rate">★ ★ ★ ★ ★</div>
+                <div class="products__prices">
+                  <span class="products__price">$499</span>
+                  <span class="products__price products__price--old">$599</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="products__item">
+              <div class="products__top">
+                <div class="products__overlay overlay">
+                  <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                    <svg class="overlay__icon overlay__icon--heart">
+                      <use href="images/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+
+                  <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                    <svg class="overlay__icon">
+                      <use href="images/icons/sprite.svg#cart-2" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <picture class="products__img">
+                  <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                    height="153">
+                </picture>
+              </div>
+
+              <div class="products__content">
+                <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                <div class="products__rate">★ ★ ★ ★ ★</div>
+                <div class="products__prices">
+                  <span class="products__price">$499</span>
+                  <span class="products__price products__price--old">$599</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="products__item">
+              <div class="products__top">
+                <div class="products__overlay overlay">
+                  <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                    <svg class="overlay__icon overlay__icon--heart">
+                      <use href="images/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+
+                  <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                    <svg class="overlay__icon">
+                      <use href="images/icons/sprite.svg#cart-2" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <picture class="products__img">
+                  <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                    height="153">
+                </picture>
+              </div>
+
+              <div class="products__content">
+                <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                <div class="products__rate">★ ★ ★ ★ ★</div>
+                <div class="products__prices">
+                  <span class="products__price">$499</span>
+                  <span class="products__price products__price--old">$599</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="products__item">
+              <div class="products__top">
+                <div class="products__overlay overlay">
+                  <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                    <svg class="overlay__icon overlay__icon--heart">
+                      <use href="images/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+
+                  <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                    <svg class="overlay__icon">
+                      <use href="images/icons/sprite.svg#cart-2" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <picture class="products__img">
+                  <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                    height="153">
+                </picture>
+              </div>
+
+              <div class="products__content">
+                <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                <div class="products__rate">★ ★ ★ ★ ★</div>
+                <div class="products__prices">
+                  <span class="products__price">$499</span>
+                  <span class="products__price products__price--old">$599</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="products__item">
+              <div class="products__top">
+                <div class="products__overlay overlay">
+                  <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                    <svg class="overlay__icon overlay__icon--heart">
+                      <use href="images/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+
+                  <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                    <svg class="overlay__icon">
+                      <use href="images/icons/sprite.svg#cart-2" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <picture class="products__img">
+                  <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                    height="153">
+                </picture>
+              </div>
+
+              <div class="products__content">
+                <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                <div class="products__rate">★ ★ ★ ★ ★</div>
+                <div class="products__prices">
+                  <span class="products__price">$499</span>
+                  <span class="products__price products__price--old">$599</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="products__item">
+              <div class="products__top">
+                <div class="products__overlay overlay">
+                  <button class="overlay__icon__wrapper" aria-label="Add To Wishlist">
+                    <svg class="overlay__icon overlay__icon--heart">
+                      <use href="images/icons/sprite.svg#heart" />
+                    </svg>
+                  </button>
+
+                  <button class="overlay__icon__wrapper btn--cart" aria-label="Add To Cart" onclick="getItemToCart()">
+                    <svg class="overlay__icon">
+                      <use href="images/icons/sprite.svg#cart-2" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <picture class="products__img">
+                  <source srcset="/" data-srcset="images/products/applemacbookpro.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/applemacbookpro.png" alt="Apple Macbook Pro" width="236"
+                    height="153">
+                </picture>
+              </div>
+
+              <div class="products__content">
+                <a href="card.html"><h3 class="products__name">Apple Macbook Pro</h3></a>
+                <div class="products__rate">★ ★ ★ ★ ★</div>
+                <div class="products__prices">
+                  <span class="products__price">$499</span>
+                  <span class="products__price products__price--old">$599</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="products__more">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="container">
+        <div class="banner__inner">
+          <div class="banner__content">
+            <h2 class="banner__title">iPhone 6 Plus</h2>
+            <p class="banner__desc">Performance and design. Taken right to the edge.</p>
+            <a class="banner__shopnow" href="card.html">Shop Now</a>
+          </div>
+          <picture class="banner__img">
+            <source srcset="/" data-srcset="images/iphone6-1x.webp" type="image/webp" media="(max-width: 576px)">
+            <source srcset="/" data-srcset="images/iphone6-2x.webp" type="image/webp">
+            <source srcset="/" data-srcset="images/iphone6-1x.png" media="(max-width: 576px)">
+            <img class="lazy" src="/" data-src="images/iphone6-2x.png" alt="iPhone 6 Plus" width="581" height="709">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="visually-hidden">Features</h2>
+      <div class="container">
+        <div class="features__inner">
+
+          <div class="features__item">
+            <img class="features__icon lazy" src="/" data-src="images/icons/features/feature-1.svg" alt="FREE SHIPPING"
+              width="70" height="46">
+            <h3 class="features__name">FREE SHIPPING</h3>
+            <p class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              minim
+              veniam, quis nostrud reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+
+          <div class="features__item">
+            <img class="features__icon lazy" src="/" data-src="images/icons/features/feature-2.svg" alt="100% REFUND" width="48"
+              height="54">
+            <h3 class="features__name">100% REFUND</h3>
+            <p class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              minim
+              veniam, quis nostrud reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+
+          <div class="features__item">
+            <img class="features__icon lazy" src="/" data-src="images/icons/features/feature-3.svg" alt="SUPPORT 24/7"
+              width="47" height="61">
+            <h3 class="features__name">SUPPORT 24/7</h3>
+            <p class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              minim
+              veniam, quis nostrud reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <div class="news__inner">
+          <h2 class="news__title">LATEST NEWS</h2>
+          <div class="news__list">
+            <a href="blog.html">
+              <article class="news__item">
+                <picture class="news__img">
+                  <source srcset="/" data-srcset="images/news/news-1.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/news/news-1.jpg" alt="Typesetting industry">
+                </picture>
+                <div class="news__content">
+                  <time class="news__date" datetime="2015-01-01">01 Jan, 2015</time>
+                  <h3 class="news__name">Typesetting industry</h3>
+                  <p class="news__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </article>
+            </a>
+            <a href="blog.html">
+              <article class="news__item">
+                <picture class="news__img">
+                  <source srcset="/" data-srcset="images/news/news-2.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/news/news-2.jpg" alt="Typesetting industry">
+                </picture>
+                <div class="news__content">
+                  <time class="news__date" datetime="2015-01-01">01 Jan, 2015</time>
+                  <h3 class="news__name">Typesetting industry</h3>
+                  <p class="news__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </article>
+            </a>
+            <a href="blog.html">
+              <article class="news__item">
+                <picture class="news__img">
+                  <source srcset="/" data-srcset="images/news/news-3.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/news/news-3.jpg" alt="Typesetting industry">
+                </picture>
+                <div class="news__content">
+                  <time class="news__date" datetime="2015-01-01">01 Jan, 2015</time>
+                  <h3 class="news__name">Typesetting industry</h3>
+                  <p class="news__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="container">
+        <div class="featured__inner">
+          <h2 class="featured__title">FEATURED PRODUCTS</h2>
+          <div class="featured__list">
+            <article class="featured__item">
+              <a href="card.html">
+                <picture class="featured__img">
+                  <source srcset="/" data-srcset="images/products/featured/featured-1.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/featured/featured-1.png" alt="Beats Solo 2" width="100"
+                    height="100">
+                </picture>
+              </a>
+              <div class="featured__content">
+                <a href="card.html"><h3 class="featured__name">Beats Solo 2 On Ear
+                  Headphones - Black</h3></a>
+                <div class="featured__rate">★ ★ ★ ★ ★</div>
+                <div class="featured__costs">
+                  <span class="featured__cost">$499</span>
+                  <span class="featured__cost featured__cost--old">$599</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="featured__item">
+              <a href="card.html">
+                <picture class="featured__img">
+                  <source srcset="/" data-srcset="images/products/featured/featured-2.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/featured/featured-2.png" alt="H-Squared tvTray"
+                    width="100" height="100">
+                </picture>
+              </a>
+              <div class="featured__content">
+                <a href="card.html"><h3 class="featured__name">H-Squared tvTray</h3></a>
+                <div class="featured__rate">★ ★ ★ ★ ★</div>
+                <div class="featured__costs">
+                  <span class="featured__cost">$499</span>
+                  <span class="featured__cost featured__cost--old">$599</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="featured__item">
+              <a href="card.html">
+                <picture class="featured__img">
+                  <source srcset="/" data-srcset="images/products/featured/featured-3.webp" type="image/webp">
+                  <img class="lazy" src="/" data-src="images/products/featured/featured-3.png" alt="Netatmo Rain Gauge"
+                    width="100" height="100">
+                </picture>
+              </a>
+              <div class="featured__content">
+                <a href="card.html"><h3 class="featured__name">Netatmo Rain Gauge</h3></a>
+                <div class="featured__rate">★ ★ ★ ★ ★</div>
+                <div class="featured__costs">
+                  <span class="featured__cost">$499</span>
+                  <span class="featured__cost featured__cost--old">$599</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search">
+      <h2 class="visually-hidden">Search</h2>
+      <div class="container">
+        <form role="search">
+          <div class="search__inner">
+            <input type="search" class="search__input" placeholder="Search query..." aria-label="Site search">
+            <button type="submit" class="btn btn--search">Search</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</div>

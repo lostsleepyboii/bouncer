@@ -1,0 +1,168 @@
+.intro {
+  background: linear-gradient(45deg, $red, $dark-purple);
+  
+  &__list {
+    display: flex;
+  }
+
+  &__slide {
+    padding: 0 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin-bottom: 2.66rem;
+
+    color: $white;
+    font-size: $font-xxl;
+    font-weight: 700;
+
+    text-align: center;
+  }
+
+  &__desc {
+    margin-bottom: 2.66rem;
+
+    color: $white;
+    font-size: $font-s;
+    font-weight: 400;
+  }
+
+  &__more {
+    padding-bottom: 0.3rem;
+
+    color: $white;
+    font-family: inherit;
+    font-size: $font-s;
+    font-weight: 700;
+    
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+
+    transition: all 0.2s ease;
+  
+    &:hover {
+      border-bottom: 3px solid $white;
+    }
+  }
+
+  &__img {
+    position: relative;
+    bottom: 0;
+
+    max-width: 465px;
+    max-height: 650px;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  width: 14px;
+  height: 24px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.swiper-button-prev {
+  left: 0;
+  right: auto;
+}
+
+.swiper-button-next {
+  right: 0;
+  left: auto;
+}
+
+.swiper-button-disabled {
+  opacity: .35;
+}
+
+
+// Media
+@include l-tablet {
+  .intro {
+    padding-top: 9.33rem;
+
+    &__slide {
+      padding: 0;
+      gap: 2rem;
+
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 60%;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: $font-title;
+    }
+
+    &__desc {
+      font-size: $font-m;
+      text-align: center;
+    }
+
+    &__more {
+      font-size: $font-m;
+    }
+
+    &__img {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 35%;
+  }
+}
+
+@include mobile {
+  .intro {
+    &__content {
+      width: 100%;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: $font-xxl;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 233px;
+      max-height: 325px;
+    }
+  }
+}

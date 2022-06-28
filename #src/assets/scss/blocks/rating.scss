@@ -1,0 +1,28 @@
+.rating {
+  &__stars {
+    margin-right: 1rem;
+    
+    color: $dark-yellow;
+    font-size: $font-s;
+  }
+
+  &__count {
+    margin-right: 0.66rem;
+
+    color: $dark-gray;
+    font-size: $font-s;
+    font-weight: 600;
+  }
+
+  &__link {
+    color: $light-blue;
+    font-size: $font-s;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: darken($light-blue, 10);
+    }
+  }
+}

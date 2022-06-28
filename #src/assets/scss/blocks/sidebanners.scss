@@ -1,0 +1,67 @@
+.sidebanners {
+  display: grid;
+  gap: 3.33rem;
+  overflow: hidden;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    
+    &--banner {
+      display: flex;
+    }
+  }
+
+  &__name {
+    margin-bottom: 2rem;
+    color: $dark-gray;
+    font-size: $font-m;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__slider {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// BANNERSBAR SLIDER
+.swiper-pagination-bullets {
+  margin-top: 1.33rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  max-width: 30px;
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background-color: $light-gray;
+  border-radius: 4px;
+
+  transition: all 0.2s ease;
+
+  &:not(:last-child) {
+    margin-right: 0.33rem;
+  }
+
+  &-active {
+    background-color: $lighter-blue;
+  }
+}
+
+// Media
+@include l-tablet {
+  .sidebanners {
+    &__block {
+      &--best {
+        display: none;
+      }
+    }
+  }
+}

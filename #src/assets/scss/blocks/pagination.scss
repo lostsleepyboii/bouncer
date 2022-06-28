@@ -1,0 +1,58 @@
+.pagination {
+  border-radius: 4px;
+  background-color: $lighter-gray;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 56px);
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.66rem;
+  }
+
+  &__item {
+    padding: 1.13rem 1.53rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $black;
+    font-family: inherit;
+    font-size: $font-m;
+    font-weight: 600;
+
+    background-color: $lighter-gray;
+    border: none;
+    border-radius: 0;
+
+    transition: all 0.2s ease;
+
+    &.active {
+      color: $white;
+      background-color: $black;
+
+      &:focus,
+      &:hover {
+        outline: none;
+        background-color: lighten($black, 5);
+      }
+    }
+
+    &:focus,
+    &:hover {
+      outline: none;
+      background-color: $gray;
+    }
+  }
+}
+
+// Media
+@include sm-mobile {
+  .pagination {
+    &__list {
+      grid-template-columns: repeat(5, 36px);
+    }
+  }
+}

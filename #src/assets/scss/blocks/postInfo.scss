@@ -1,0 +1,42 @@
+.postInfo {
+  margin-bottom: 1rem;
+  display: flex;
+  
+  &__item {
+    position: relative;
+    display: flex;
+
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: -18px;
+        bottom: 8px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background-color: $gray;
+      }
+    }
+  }
+
+  &__comm {
+    color: $lighter-blue;
+    font-size: $font-s;
+    font-weight: 700;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: darken($lighter-blue, 15);
+    }
+  }
+
+  &__date {
+    color: $black;
+    font-size: $font-s;
+    font-weight: 700;
+  }
+}

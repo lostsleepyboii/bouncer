@@ -1,0 +1,350 @@
+.cardTop {
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  gap: 2rem;
+}
+
+.cardSlider {
+  display: grid;
+  gap: 0.66rem;
+
+  &__main {
+    width: 370px;
+
+    picture img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__thumbs {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 0.55rem;
+  }
+
+  &__thumb {
+    padding: 0.3rem;
+    border: 2px solid $light-gray;
+    cursor: pointer;
+      
+    transition: all 0.2s ease;
+
+    &.active,
+    &:hover {
+      border: 2px solid $blue;
+    }
+
+    picture {
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+    }
+  }
+}
+
+.cardInfo {
+  &__top,
+  &__desc,
+  &__selects,
+  &__bottom {
+    padding-bottom: 1.33rem;
+    border-bottom: 2px solid $lighter-gray;
+  }
+
+  &__desc,
+  &__selects,
+  &__bottom,
+  &__shares {
+    padding-top: 1.33rem;
+  }
+
+  &__name {
+    margin-bottom: 1.33rem;
+
+    color: $black;
+    font-size: $font-l;
+    font-weight: 600;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__categories {
+    .categorie {
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 120px);
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &__name {
+        color: $black;
+        font-size: $font-s;
+        font-weight: 700;
+      }
+
+      &__info {
+        color: $black;
+        font-size: $font-s;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__prices {
+    margin-bottom: 1.33rem;
+    display: flex;
+  }
+
+  &__price {
+    color: $red;
+    font-size: $font-l;
+    font-weight: 400;
+
+    &:not(:last-child) {
+      margin-right: 0.66rem;
+    }
+
+    &--old {
+      color: $dark-gray;
+      text-decoration: line-through;
+      text-decoration-color: #5D656B;
+    }
+  }
+
+  &__selects {
+    .infoSelect {
+      &__block {
+        display: grid;
+        grid-template-columns: repeat(2, 120px);
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &__name {
+        color: $black;
+        font-size: $font-s;
+        font-weight: 700;
+      }
+
+      &__color {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .color {
+          &__box {
+            position: relative;
+
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+
+            cursor: pointer;
+
+            transition: all 0.2s ease;
+
+            &.active {
+              transform: scale(0.8);
+
+              &::after {
+                opacity: 1;
+                transform: scale(1);
+                visibility: visible;
+              }
+
+              &:hover,
+              &:focus {
+                &::after {
+                  opacity: 1;
+                  transform: scale(1);
+                  visibility: visible;
+                  border: 2px solid black;
+                }
+
+                box-shadow: none;
+              }
+            }
+
+            &:hover,
+            &:focus {
+              box-shadow: 0 0 0 2px black;
+              outline: none;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: -6px;
+              left: -6px;
+
+              visibility: hidden;
+
+              width: 32px;
+              height: 32px;
+
+              border: 2px solid rgba(#006CFF, 0.5);
+              border-radius: 50%;
+
+              transform: scale(0.5);
+              opacity: 0;
+              transition: all 0.2s ease;
+            }
+
+            &.blue {
+              background-color: #006CFF;
+            }
+
+            &.red {
+              background-color: #FC3E39;
+            }
+
+            &.black {
+              background-color: #171717;
+            }
+
+            &.yellow {
+              background-color: #FFF600;
+            }
+          }
+        }
+      }
+
+      &__size {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+
+          border-style: solid;
+          border-width: 5px 4px 0 4px;
+          border-color: #000000 transparent transparent transparent;
+
+          position: absolute;
+          top: 50%;
+          right: 1rem;
+          z-index: 1;
+          margin-top: -3px;
+        }
+
+        select {
+          padding: 0.66rem 2rem 0.66rem 0.66rem;
+
+          min-width: 115px;
+
+          appearance: none;
+
+          background: none;
+          border: 2px solid $light-gray;
+          border-radius: 4px;
+
+          color: $black;
+          font-family: inherit;
+          font-size: $font-s;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__counter {
+    display: flex;
+    height: 47px;
+    border-radius: 4px;
+    background-color: $lighter-gray;
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+  &__shares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.66rem;
+
+    .share {
+      &__btn {
+        padding: 1rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        font-family: inherit;
+        font-size: $font-s;
+        font-weight: 600;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+
+        &--fb {
+          background-color: #385C8E;
+
+          &:hover {
+            background-color: darken(#385C8E, 10);
+          }
+        }
+
+        &--tw {
+          background-color: #03A9F4;
+
+          &:hover {
+            background-color: darken(#03A9F4, 10);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media 
+@include laptop {
+  .cardInfo {
+    &__bottom {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem
+    }
+
+    &__shares {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include sm-tablet {
+  .cardTop {
+    grid-template-columns: 1fr;
+  }
+
+  .cardSlider {
+    &__main {
+      max-width: 370px;
+      width: 100%;
+    }
+  }
+}

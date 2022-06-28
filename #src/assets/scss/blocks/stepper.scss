@@ -1,0 +1,53 @@
+.stepper, 
+.counter {
+  &__input {
+    width: 50px;
+    height: 100%;
+    color: $black;
+    font-family: inherit;
+    font-size: $font-xm;
+    font-weight: 400;
+    text-align: center;
+    pointer-events: none;
+    background-color: $lighter-gray;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 100%;
+    background: none;
+
+    &:hover {
+      .plus,
+      .minus {
+        fill: darken($lighter-blue, 10);
+      }
+    }
+
+    &.disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+}
+
+// Media
+@include laptop {
+  .stepper, 
+  .counter {
+    &__input {
+      flex-grow: 1;
+    }
+
+    &__btn {
+      width: 50px;
+    }
+  }
+}

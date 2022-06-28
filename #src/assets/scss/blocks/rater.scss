@@ -1,0 +1,36 @@
+.rater {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: $lighter-gray;
+
+  &__btn {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+
+    &:hover {
+      .up,
+      .down {
+        stroke: darken($lighter-blue, 10);
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 30px;
+    color: $black;
+    font-family: inherit;
+    font-size: $font-s;
+    font-weight: 400;
+    pointer-events: none;
+    text-align: center;
+    background-color: $lighter-gray;
+  }
+}

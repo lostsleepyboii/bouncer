@@ -1,0 +1,119 @@
+.banner-2 {
+  margin-bottom: 1.66rem;
+  padding: 0 3.33rem;
+  border-radius: 4px;
+  background-color: $light-blue;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    padding: 3.66rem 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin-bottom: 1.33rem;
+
+    color: $white;
+    font-size: $font-title-s;
+    font-weight: 400;
+
+    text-align: center;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: darken($white, 15);
+    }
+  }
+
+  &__desc {
+    margin-bottom: 2.33rem;
+
+    width: 70%;
+
+    color: $white;
+    font-size: $font-xm;
+    font-weight: 400;
+  }
+
+  &__shopnow {
+    padding-bottom: 0.3rem;
+
+    color: $white;
+    font-family: inherit;
+    font-size: $font-s;
+    font-weight: 700;
+    
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+
+    transition: all 0.2s ease;
+  
+    &:hover {
+      border-bottom: 3px solid $white;
+    }
+  }
+  
+  &__img {
+    display: flex;
+
+    max-width: 365px;
+    max-height: 340px;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// Media
+@include l-tablet {
+  .banner-2 {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__content {
+      align-items: center;
+    }
+
+    &__desc {
+      text-align: center;
+    }
+
+    &__shopnow {
+      font-size: $font-m;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@include mobile {
+  .banner--2 {
+    &__title {
+      font-size: $font-xxl;
+    }
+
+    &__desc {
+      width: 100%;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+}

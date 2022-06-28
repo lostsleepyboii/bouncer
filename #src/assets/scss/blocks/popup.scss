@@ -1,0 +1,228 @@
+.popup {
+  padding: 3rem 2rem 2rem 2rem;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 120;
+  background-color: rgba($black, 0.5);
+  transition: all 0.2s ease;
+
+  &.visible {
+    display: flex;
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 960px;
+    max-height: 485px;
+    display: flex;
+
+    border-radius: 5px;
+    background-color: $white;
+  }
+
+  &__close {
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+    background-image: url("../images/icons/close.svg");
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: lighten($black, 5);
+    }
+  }
+
+  &__content {
+    padding: 4rem 5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    color: $black;
+    font-size: $font-xxxl;
+    font-weight: 600;
+  }
+
+  &__desc {
+    margin-bottom: 4.33rem;
+    color: $black;
+    font-size: $font-xm;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__form {
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+  }
+
+  &__input {
+    padding: 1.2rem 1.06rem;
+
+    width: 250px;
+
+    resize: none;
+    overflow: auto;
+
+    color: $black;
+    font-family: inherit;
+    font-size: $font-xm;
+    font-weight: 400;
+
+    outline: 0;
+    border-top: 2px solid $light-gray;
+    border-bottom: 2px solid $light-gray;
+    border-left: 2px solid $light-gray;
+    border-radius: 4px 0 0 4px;
+
+    transition: all 0.2s ease;
+
+    &:focus {
+      border-top: 2px solid $lighter-blue;
+      border-bottom: 2px solid $lighter-blue;
+      border-left: 2px solid $lighter-blue;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .checkbox {
+      &__square {
+        display: block;
+
+        width: 18px;
+        height: 18px;
+        border: 2px solid $black;
+        border-radius: 2px;
+      }
+
+      &__radio {
+        position: absolute;
+        appearance: none;
+      }
+
+      &__text {
+        margin-left: 1rem;
+        color: $black;
+        font-size: $font-xm;
+        font-weight: 400;
+        user-select: none;
+      }
+    }
+
+    // Checkbox State's
+    .checkbox__radio:checked+.checkbox__square {
+      background-image: url("../images/icons/check.svg");
+      background-color: $black;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .checkbox__radio:focus+.checkbox__square {
+      border: 2px solid $lighter-blue;
+    }
+
+    .checkbox__radio:checked:focus+.checkbox__square {
+      background-image: url("../images/icons/check.svg");
+      background-color: $lighter-blue;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid $lighter-blue;
+    }
+  }
+
+  &__img {
+    max-width: 410px;
+    width: 100%;
+    background-color: #D0D5D9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+// LAZY LOAD BANNERS
+.no-webp .popup__img.lazy-bg-loaded  {
+  background-image: url("../images/popup-img.jpg");
+}
+
+.webp .popup__img.lazy-bg-loaded  {
+  background-image: url("../images/popup-img.webp");
+}
+
+// Media 
+@include l-tablet {
+  .popup {
+    &__inner {
+      max-width: 550px;
+      max-height: 550px;
+    }
+    
+    &__title {
+      font-size: $font-xxl;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__form {
+      flex-direction: column;
+    }
+
+    &__input {
+      margin-bottom: 0.5rem;
+      width: 100%;
+
+      font-size: $font-m;
+      border: 2px solid $light-gray;
+      border-radius: 4px;
+
+      &:focus {
+        border: 2px solid $lighter-blue;
+      }
+    }
+
+  }
+}
+
+@include mobile {
+  .popup {
+    &__inner {
+      max-height: 505px;
+    }
+
+    &__title {
+      font-size: $font-xl;
+    }
+
+    &__content {
+      padding: 3rem 1rem;
+    }
+  }
+}

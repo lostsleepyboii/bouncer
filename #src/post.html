@@ -1,0 +1,165 @@
+---
+layout: default
+title: Post
+---
+<div class="wrapper">
+  {{> breadcrumbs}}
+  <div class="container">
+    <h1 class="visually-hidden">Bouncer - Techshop</h1>
+    <div class="wrapper wrapper--post">
+      <picture>
+        <source srcset="/" data-srcset="images/blog/post/post-header.webp" type="image/webp">
+        <img class="singlePost__img lazy" src="/" data-src="images/blog/post/post-header.jpg" alt="Post Header Image" width="1170" height="500">
+      </picture>
+
+      <div class="wrapper wrapper--blog">
+        <main class="main">
+          <article class="singlePost__entryPost entryPost">
+            <header class="entryPost__header">
+              <ul class="entryPost__info postInfo">
+                <li class="postInfo__item"><a href="#" class="postInfo__comm">2 comments</a></li> 
+                <li class="postInfo__item"><time class="postInfo__date" datetime="2018-12-15">Dec 15 2018</time></li>
+              </ul>
+              <h2 class="entryPost__title">Dolor sit amet, consectetur adipiscing elit, sed do</h2>
+            </header>
+            <div class="entryPost__content">
+              <p class="entryPost__text">
+                Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. 
+              </p>
+              <p class="entryPost__text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+              </p>
+              <picture>
+                <source srcset="/" data-srcset="images/blog/post/post-img.webp" type="image/webp">
+                <img class="entryPost__img lazy" src="/" data-src="images/blog/post/post-img.jpg" alt="Post Image" width="840" height="560">
+              </picture>
+              <p class="entryPost__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+              </p>
+            </div>
+            <footer class="entryPost__footer">
+              <div class="entryPost__share share">
+                <label class="share__label">Share</label>
+                <button class="share__btn share__btn--fb" aria-label="Facebook">
+                  <svg class="share__icon share__icon--sm share__icon--fb">
+                    <use href="images/icons/sprite.svg#facebook"/>
+                  </svg>
+                </button>
+                <button class="share__btn share__btn--tw" aria-label="Twitter">
+                  <svg class="share__icon share__icon--sm share__icon--tw">
+                    <use href="images/icons/sprite.svg#twitter"/>
+                  </svg>
+                </button>
+              </div>
+            </footer>
+          </article>
+          <div class="singlePost__comments comments" id="comments">
+            <h3 class="comments__title">Comments</h3>
+            <div class="comments__list">
+              <article class="comments__item">
+                <header class="comments__header">
+                  <a href="#">
+                    <picture>
+                      <source srcset="/" data-srcset="images/blog/post/avatar.webp" type="image/webp">
+                      <img class="comments__avatar lazy" src="/" data-src="images/blog/post/avatar.png" alt="Lisa Doe" width="40" height="40">
+                    </picture>
+                  </a>
+                  <a href="#"><h4 class="comments__author">Lisa Doe</h4></a>
+                  <time class="comments__date" datetime="2018-12-16">Dec 16 2018</time>
+                </header>
+                <div class="comments__body">
+                  <div class="comments__rater rater">
+                    <button class="rater__btn rater__btn--plus" aria-label="Plus">
+                      <svg class="up">
+                        <use href="images/icons/sprite.svg#up"/>
+                      </svg>
+                    </button>
+                    <input type="text" class="rater__input" value="3" maxlength="3" aria-label="Rate">
+                    <button class="rater__btn rater__btn--minus" aria-label="Minus">
+                      <svg class="down">
+                        <use href="images/icons/sprite.svg#down"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </article>
+              <article class="comments__item">
+                <header class="comments__header">
+                  <a href="#">
+                    <picture>
+                      <source srcset="/" data-srcset="images/blog/post/avatar.webp" type="image/webp">
+                      <img class="comments__avatar lazy" src="/" data-src="images/blog/post/avatar.png" alt="Lisa Doe"  width="40" height="40">
+                    </picture>
+                  </a>
+                  <a href="#"><h4 class="comments__author">Lisa Doe</h4></a>
+                  <time class="comments__date" datetime="2018-12-16">Dec 16 2018</time>
+                </header>
+                <div class="comments__body">
+                  <div class="comments__rater rater">
+                    <button class="rater__btn rater__btn--plus" aria-label="Plus">
+                      <svg class="up">
+                        <use href="images/icons/sprite.svg#up"/>
+                      </svg>
+                    </button>
+                    <input type="text" class="rater__input" value="-2" maxlength="3" aria-label="Rate">
+                    <button class="rater__btn rater__btn--minus" aria-label="Minus">
+                      <svg class="down">
+                        <use href="images/icons/sprite.svg#down"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </main>
+        <aside class="sidebanners">
+          <h2 class="visually-hidden">Side banners</h2>
+          <div class="sidebanners__block sidebanners__block--postthumb postThumb">
+            <h3 class="sidebanners__name">Top Articles</h3>
+            <div class="postThumb__list">
+              <a href="post.html">
+                <div class="postThumb__item postThumb__item--1 lazy-bg">
+                  <span class="postThumb__name">Dolor sit amet, consectetur adipiscing elit, sed do</span>
+                </div>
+              </a>
+              <a href="post.html">
+                <div class="postThumb__item postThumb__item--2 lazy-bg">
+                  <span class="postThumb__name">Duis aute irure dolor in reprehenderit in voluptate velit</span>
+                </div>
+              </a>
+              <a href="post.html">
+                <div class="postThumb__item postThumb__item--3 lazy-bg">
+                  <span class="postThumb__name">Ut enim ad minima veniam, quis nostrum exercitationem ullam</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="sidebanners__block sidebanners__block--tags tags">
+            <h3 class="sidebanners__name">Tags</h3>
+            <ul class="tags__list">
+              <li class="tags__item"><a href="#" class="tags__link">Promo</a></li>
+              <li class="tags__item"><a href="#" class="tags__link">Holidays</a></li>
+              <li class="tags__item"><a href="#" class="tags__link">Gift</a></li>
+              <li class="tags__item"><a href="#" class="tags__link">Christmas</a></li>
+              <li class="tags__item"><a href="#" class="tags__link">Giveaway</a></li>
+              <li class="tags__item"><a href="#" class="tags__link">Tips</a></li>
+              <li class="tags__item"><a href="#" class="tags__link">New Year</a></li>
+            </ul>
+          </div>
+          <div class="sidebanners__block sidebanners__block--banner">
+            <a href="card.html">
+              <div class="banners__item banners__item--side banners__item--goprohero6 lazy-bg">
+                <h3 class="banners__title">GoPro Hero 6</h3>
+                <p class="banners__desc">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor</p>
+                <span class="banners__cost">$299</span>
+              </div>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>

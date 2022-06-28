@@ -1,0 +1,94 @@
+.check {
+  &__item {
+    display: flex;
+  }
+
+  &__box {
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: -6px;
+
+      visibility: hidden;
+
+      width: 32px;
+      height: 32px;
+
+      border: 2px solid rgba(#006CFF, 0.5);
+      border-radius: 50%;
+
+      transform: scale(0.5);
+      opacity: 0;
+      transition: all 0.2s ease;
+    }
+
+    &.blue {
+      background-color: #006CFF;
+    }
+
+    &.red {
+      background-color: #FC3E39;
+    }
+
+    &.black {
+      background-color: #171717;
+    }
+
+    &.yellow {
+      background-color: #FFF600;
+    }
+
+    &.rose {
+      background-color: #FF00B4;
+    }
+
+    &.beige {
+      background-color: #EFDFDF;
+    }
+  }
+
+  &__radio {
+    position: absolute;
+    appearance: none;
+
+    transition: all 0.2s ease;
+  }
+}
+
+// Checkbox State's
+.check__radio:checked+.check__box {
+  transform: scale(0.8);
+
+  &::after {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+.check__radio:checked:focus+.check__box {
+  &:after {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+    border: 2px solid black;
+  }
+
+  box-shadow: none;
+}
+
+.check__radio:focus+.check__box {
+  box-shadow: 0 0 0 2px black;
+}
+

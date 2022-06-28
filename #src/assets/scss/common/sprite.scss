@@ -1,0 +1,140 @@
+.nav__icon {
+  fill: $black;
+  width: 16px;
+  height: 16px;
+
+  transition: fill 0.2s ease;
+}
+
+.overlay__icon {
+  fill: $lighter-blue;
+  width: 16px;
+  height: 16px;
+
+  &--heart {
+    height: 14px;
+  }
+
+  transition: fill 0.2s ease;
+}
+
+.social__icon {
+  width: 8px;
+  height: 15px;
+  fill: #385C8E;
+  transition: fill 0.2s ease;
+
+  &:hover {
+    fill: darken(#385C8E, 10)
+  }
+
+  &--twitter {
+    width: 18px;
+    fill: #03A9F4;
+
+    &:hover {
+      fill: darken(#03A9F4, 10)
+    }
+  }
+}
+
+.share__icon {
+  margin-right: 1rem;
+  fill: $white;
+  transition: fill 0.2s ease;
+
+  &--sm {
+    &.share__icon--fb {
+      width: 6px;
+      height: 12px;
+    }
+
+    &.share__icon--tw {
+      width: 12px;
+      height: 10px;
+    }
+  }
+
+  &--fb {
+    width: 8px;
+    height: 15px;
+  }
+
+  &--tw {
+    width: 18px;
+    height: 15px;
+  }
+}
+
+.arrow-left,
+.arrow-right {
+  fill: $black;
+  width: 14px;
+  height: 24px;
+
+  &:hover {
+    fill: darken($black, 15);
+  }
+
+  transition: fill 0.2s ease;
+}
+
+.filter-grid,
+.filter-line,
+.filter-sort {
+  transition: fill 0.2s ease;
+}
+
+.filter-grid {
+  fill: $dark-gray;
+  width: 20px;
+  height: 20px;
+}
+
+.filter-line {
+  fill: $dark-gray;
+  width: 18px;
+  height: 16px;
+}
+
+.filter-sort {
+  fill: $black;
+  width: 20px;
+  height: 20px;
+}
+
+.plus,
+.minus {
+  fill: $lighter-blue;
+  pointer-events: none;
+  transition: fill 0.2s ease;
+}
+
+.minus {
+  width: 8px;
+  height: 2px;
+}
+
+.plus {
+  width: 8px;
+  height: 8px;
+}
+
+.up,
+.down {
+  width: 10px;
+  height: 5px;
+  fill: none;
+  stroke: $lighter-blue;
+  pointer-events: none;
+  transition: stroke 0.2s ease;
+}
+
+.checkmark {
+  display: none;
+  width: 10px;
+  height: 7px;
+  fill: none;
+  stroke: $white;
+  pointer-events: none;
+}
